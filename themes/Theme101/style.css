@@ -1,0 +1,455 @@
+/*
+Theme Name: custom theme
+Theme URI: http://www.customtheme.dev.cc/
+Author: Yogesh
+Author URI: http://wordpress.org/
+Description: This is a custom wordpress site.
+Version: 1.0
+License: GNU General Public License v2 or later
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Open Sans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+/*nav*/
+.navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.navbar {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all ease 0.3s;
+}
+/*.navbar-default .navbar-nav>li>a{
+     color:#573E7D !important;
+  }*/
+.dropdown-menu > li > a {
+  color: #573e7d !important;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #3b2a54 !important;
+}
+.shrink-nav {
+  padding-top: 2px !important; /*changeable*/
+  padding-bottom: 0px !important; /*changeable*/
+}
+.logo img {
+  margin-top: -8px;
+  width: 230px !important; /*changeable*/
+  transition: width ease-in-out 0.3s;
+}
+.shrink-logo img {
+  transition: width ease-in-out 0.3s;
+  width: 180px !important; /*changeable*/
+}
+@media (max-width: 767px) {
+  .logo img {
+    width: 200px !important; /*changeable*/
+  }
+  .shrink-logo img {
+    margin-top: 0px;
+    width: 160px !important; /*changeable*/
+  }
+}
+/*common*/
+.w-100 {
+  width: 100%;
+}
+p {
+  color: #595959;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section#section {
+  margin-bottom: 0px;
+}
+
+.bg {
+  background-color: #d8d4d4;
+}
+
+.textcolor {
+  color: #686565;
+}
+
+.login {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bg p {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.bg i {
+  color: #191437;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bg a.btn.btn-default {
+  padding: 14px 24px;
+  font-size: 12px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
+  background-color: #191437;
+  margin-left: 20px;
+}
+
+#section a.pdf {
+  color: #191437;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+#section img.imgpdf {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+/*footer*/
+footer {
+  background-color: #191437;
+  color: white;
+}
+footer li {
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer h4 {
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.cwu svg.mk-svg-icon {
+  margin-left: -16px;
+  margin-right: 8px;
+}
+.cwu svg.mk-svg-icon {
+  position: absolute;
+  left: 0;
+  fill: #b2b2b2;
+  vertical-align: middle;
+}
+
+.fuo svg.mk-svg-icon {
+  margin-left: 18px;
+  fill: #b2b2b2;
+}
+.fuo li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.link li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+footer .container-fluid.carr.text-center {
+  background: #130b38;
+  padding: 15px;
+}
+/*nav*/
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  border: 1px solid #191437;
+  background-color: #191437;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  border: 1px solid #191437;
+  background-color: #191437;
+  color: #ffffff !important;
+  border-radius: 10px;
+}
+/*pageheader*/
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: none;
+}
+
+.bg-img {
+  background: url(/wp-content/themes/Theme101/img/bg.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 50px;
+}
+
+.page-header .bg-img .container .row .col-sm-6.col-xs-12 {
+  color: white;
+}
+
+/*content*/
+.bg-img h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.bg-img h3 {
+  word-spacing: 2px;
+}
+
+.bg-img p {
+  color: white;
+}
+.bg-img a.btn.btn-default {
+  padding: 17px 19px;
+  font-size: 13px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  width: 215px;
+  border-radius: 5px;
+  color: white;
+  background-color: #191437;
+  margin-left: 20px;
+  border: #191437;
+}
+
+.bg a.pdf p {
+  color: #191437;
+  font-weight: 600;
+}
+
+/*video*/
+.video {
+  margin-top: 12vh;
+}
+/*page2*/
+
+/*terms*/
+.bg-img2 {
+  background: url(/wp-content/themes/Theme101/img/bg3.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 50px;
+}
+.bg-img2 h1 {
+  font-size: 30px;
+}
+
+#terms ol {
+  padding: 0px 25px;
+}
+
+#terms ol li {
+  margin: 20px 0px;
+  color: #595959;
+}
+#terms ol li ul li {
+  list-style: none;
+  margin: 6px 0px;
+}
+/*page 3*/
+/*PRIVACY POLICY*/
+section#privacy .container h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+section#privacy ul {
+  list-style: none;
+}
+
+/*page 4*/
+/*about us*/
+h2.about {
+  margin-top: 20vh;
+  text-transform: none;
+  font-weight: normal;
+  padding: 11px;
+  font-size: 32px;
+}
+
+.aboutus p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+a.btn.btn-default.join {
+  padding: 14px 24px;
+  font-size: 12px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  width: 250px;
+  border-radius: 5px;
+  color: white;
+  background-color: #191437;
+  margin-left: 20px;
+}
+
+/*about us banner img*/
+.jumbotron {
+  background: -webkit-gradientlinear-gradient(to right, #191437f2, #969ba0ab),
+    url(/wp-content/themes/Theme101/img/teaching.jpg);
+  background: -webkit-linear-gradient(to right, #191437f2, #969ba0ab),
+    url(/wp-content/themes/Theme101/img/teaching.jpg);
+  background: -o-linear-gradient(to right, #191437f2, #969ba0ab),
+    url(/wp-content/themes/Theme101/img/teaching.jpg);
+  background: linear-gradient(to right, #191437f2, #969ba0ab),
+    url(/wp-content/themes/Theme101/img/teaching.jpg);
+  width: 100%;
+  height: 60vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+header .jumbotron.text-left h1 {
+  top: 13vh;
+  font-size: 2vw;
+  color: white;
+  margin-bottom: 50px;
+  max-width: 44%;
+  -webkit-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  transform: translateX(30%);
+  position: absolute;
+  text-transform: none;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  header .jumbotron.text-left h1 {
+    top: 12vh;
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 50px;
+    max-width: 47%;
+    -webkit-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    transform: translateX(30%);
+    position: absolute;
+    text-transform: none;
+  }
+}
+
+/*media query*/
+/*tab*/
+@media (min-width: 700px) and (max-width: 1000px) {
+  footer .cwu ul {
+    margin-left: 20px;
+  }
+  .cwu svg.mk-svg-icon {
+    margin-left: 0px;
+    margin-right: 8px;
+  }
+  .navbar
+    .navbar-default
+    .navbar-fixed-top
+    .my-nav
+    .hidden-lg
+    .hidden-md
+    .hidden-xs
+    .navbar-right {
+    float: left !important;
+    margin-right: 0px;
+  }
+  .bg-img .video {
+    margin-top: 12vh;
+    width: 320px;
+  }
+  .bg-img {
+    background: url(/wp-content/themes/Theme101/img/bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/*mobile*/
+@media (min-width: 300px) and (max-width: 500px) {
+  .bg-img {
+    background: url(/wp-content/themes/Theme101/img/bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 10px;
+  }
+  /*  .bg-img iframe {
+       width: 90vw;
+       height: 225px;
+   }*/
+  .bg-img h2 {
+    margin-top: 20vh;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 35px;
+  }
+}
